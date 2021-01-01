@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "674869176611",
+    "firebase_url": "https://loginandroid-b90e7.firebaseio.com",
+    "project_id": "loginandroid-b90e7",
+    "storage_bucket": "loginandroid-b90e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674869176611:android:f94ed6103089063bea4496",
+        "android_client_info": {
+          "package_name": "com.example.usahaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674869176611-9cl2udqnu0k7elf8sl4t4r14kgub4f7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVgiwJezaGcMmizJ-WNDieVFviQIhk6DY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674869176611-9cl2udqnu0k7elf8sl4t4r14kgub4f7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

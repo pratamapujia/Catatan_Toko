@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.usahaku.home_fragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_home_fragment_to_frag_produk"
+            app:destination="@id/frag_produk" />
+        <action
+            android:id="@+id/action_home_fragment_to_fragment_pelanggan"
+            app:destination="@id/fragment_pelanggan" />
+        <action
+            android:id="@+id/action_home_fragment_to_fragment_penjualan"
+            app:destination="@id/fragment_penjualan" />
+        <action
+            android:id="@+id/action_home_fragment_to_fraginfo"
+            app:destination="@id/fraginfo" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/frag_produk"
+        android:name="com.example.usahaku.Frag_produk"
+        android:label="fragment_produk"
+        tools:layout="@layout/fragment_produk" >
+        <action
+            android:id="@+id/action_frag_produk_to_tambahproduk"
+            app:destination="@id/tambahproduk" />
+        <action
+            android:id="@+id/action_frag_produk_to_fragdialog_pilproduk"
+            app:destination="@id/fragdialog_pilproduk" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahproduk"
+        android:name="com.example.usahaku.tambahproduk"
+        android:label="fragment_tambahproduk"
+        tools:layout="@layout/fragment_tambahproduk" />
+    <fragment
+        android:id="@+id/fragment_pelanggan"
+        android:name="com.example.usahaku.fragment_pelanggan"
+        android:label="fragment_pelanggan" >
+        <action
+            android:id="@+id/action_fragment_pelanggan_to_fragment_tambahpelanggan"
+            app:destination="@id/fragment_tambahpelanggan" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_tambahpelanggan"
+        android:name="com.example.usahaku.fragment_tambahpelanggan"
+        android:label="fragment_tambahpelanggan" />
+    <fragment
+        android:id="@+id/fragment_tambahjual"
+        android:name="com.example.usahaku.fragment_tambahjual"
+        android:label="fragment_tambahjual" >
+        <action
+            android:id="@+id/action_fragment_tambahjual_to_frag_produk"
+            app:destination="@id/frag_produk" />
+    </fragment>
+    <dialog
+        android:id="@+id/fragdialog_pilproduk"
+        android:name="com.example.usahaku.fragdialog_pilproduk"
+        android:label="fragdialog_pilproduk" />
+    <fragment
+        android:id="@+id/fragment_penjualan"
+        android:name="com.example.usahaku.fragment_penjualan"
+        android:label="fragment_penjualan" >
+        <action
+            android:id="@+id/action_fragment_penjualan_to_fragment_tambahjual"
+            app:destination="@id/fragment_tambahjual" />
+        <action
+            android:id="@+id/action_fragment_penjualan_to_fragdialog_upjual"
+            app:destination="@id/fragdialog_upjual" />
+    </fragment>
+    <dialog
+        android:id="@+id/fragdialog_upjual"
+        android:name="com.example.usahaku.fragdialog_upjual"
+        android:label="fragdialog_upjual" />
+    <fragment
+        android:id="@+id/fraginfo"
+        android:name="com.example.usahaku.fraginfo"
+        android:label="fraginfo" />
+    </navigation>

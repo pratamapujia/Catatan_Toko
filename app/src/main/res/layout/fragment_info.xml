@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="100dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/baloo"
+            android:text="Created and Designed by"
+            android:textAppearance="@style/TextAppearance.Usaha.Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/source"
+            android:text="Pratama Puji A."
+            android:textAppearance="@style/TextAppearance.Usaha.Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/source"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPrimary"
+            android:text="NPM : 18082010016" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:autoLink="email"
+            android:fontFamily="@font/source"
+            android:text="pratamapujia@gmail.com"
+            android:textAppearance="@style/TextAppearance.Usaha.Info"
+            android:textColorLink="@color/textColorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autoLink="web"
+            android:fontFamily="@font/source"
+            android:text="github.com/pratamapujia/"
+            android:textAppearance="@style/TextAppearance.Usaha.Info"
+            android:textColorLink="@color/textColorPrimary"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="16dp"
+            android:tint="?android:attr/textColorPrimary"
+            app:srcCompat="@drawable/riyan"
+            tools:srcCompat="@drawable/riyan" />
+    </LinearLayout>
+</layout>

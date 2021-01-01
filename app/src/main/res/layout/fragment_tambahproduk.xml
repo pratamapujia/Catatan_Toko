@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        tools:context="com.example.usahaku.tambahproduk">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_food" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Tambah Produk"
+                    android:fontFamily="@font/baloo"
+                    android:textAppearance="@style/TextAppearance.Usaha.Title" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="24dp"
+                    app:cardBackgroundColor="@color/card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Usaha.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nama Produk"
+                            android:fontFamily="@font/baloo"
+                            android:textColorHint="@color/textColorPrimary">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/nama_produk"
+                                android:textColor="@color/textColorPrimary"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Usaha.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Deskripsi Produk"
+                            android:fontFamily="@font/baloo"
+                            android:textColorHint="@color/textColorPrimary">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/deskproduk"
+                                android:textColor="@color/textColorPrimary"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Usaha.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Harga Pokok"
+                            android:fontFamily="@font/baloo"
+                            android:textColorHint="@color/textColorPrimary">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/hargapokok"
+                                android:textColor="@color/textColorPrimary"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                       <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Usaha.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Harga Jual"
+                            android:fontFamily="@font/baloo"
+                            android:textColorHint="@color/textColorPrimary">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/hargajual"
+                                android:textColor="@color/textColorPrimary"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.Usaha.TextInputLayout"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Jumlah"
+                                android:fontFamily="@font/baloo"
+                                android:textColorHint="@color/textColorPrimary">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/jumlah"
+                                    android:textColor="@color/textColorPrimary"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.Usaha.TextInputLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Satuan"
+                                android:fontFamily="@font/baloo"
+                                android:textColorHint="@color/textColorPrimary">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/satuan"
+                                    android:textColor="@color/textColorPrimary"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/saveproduk"
+                            style="@style/Widget.Usaha.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/design_default_color_secondary"
+                            android:text="SIMPAN" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

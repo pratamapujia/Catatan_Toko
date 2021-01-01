@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_c"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/TextAppearance.Usaha.Text"
+            android:text="Jumlah Produk"
+            android:textSize="36sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nama Produk "
+                        style="@style/TextAppearance.Usaha.Text"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/namapro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/text"
+                        style="@style/TextAppearance.Usaha.Text"
+                        android:layout_width="113dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Harga Produk "
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/hargapro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/ext"
+                        style="@style/TextAppearance.Usaha.Text"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stok Produk   "
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/jmlpro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/TextAppearance.Usaha.Text"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jumlah Produk "
+                        android:textSize="18sp" />
+                    <EditText
+                        android:id="@+id/pilihjmlpro"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberSigned"
+                        android:textSize="14sp" />
+                    <TextView
+                        style="@style/TextAppearance.Usaha.Text"
+                        android:id="@+id/stnproduk"
+                        android:layout_width="31dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/pilihjmlproduk"
+                    style="@style/Widget.Usaha.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/design_default_color_secondary"
+                    android:text="PILIH" />
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </layout>
