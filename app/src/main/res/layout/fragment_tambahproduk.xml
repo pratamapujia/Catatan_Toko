@@ -84,11 +84,13 @@
                             android:hint="Harga Pokok"
                             android:fontFamily="@font/baloo"
                             android:textColorHint="@color/textColorPrimary">
+
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/hargapokok"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/hargapokok"
-                                android:textColor="@color/textColorPrimary"/>
+                                android:inputType="number"
+                                android:textColor="@color/textColorPrimary" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                        <com.google.android.material.textfield.TextInputLayout
@@ -98,11 +100,13 @@
                             android:hint="Harga Jual"
                             android:fontFamily="@font/baloo"
                             android:textColorHint="@color/textColorPrimary">
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/hargajual"
-                                android:textColor="@color/textColorPrimary"/>
+
+                           <com.google.android.material.textfield.TextInputEditText
+                               android:id="@+id/hargajual"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:inputType="number"
+                               android:textColor="@color/textColorPrimary" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <LinearLayout
@@ -117,11 +121,13 @@
                                 android:hint="Jumlah"
                                 android:fontFamily="@font/baloo"
                                 android:textColorHint="@color/textColorPrimary">
+
                                 <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/jumlah"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/jumlah"
-                                    android:textColor="@color/textColorPrimary"/>
+                                    android:inputType="number"
+                                    android:textColor="@color/textColorPrimary" />
                             </com.google.android.material.textfield.TextInputLayout>
 
                             <com.google.android.material.textfield.TextInputLayout
