@@ -51,30 +51,6 @@ data class penjualan(
     @PrimaryKey(autoGenerate = true) var id_temp: Int = 0
 
 }
-@Entity
-    (tableName = "tabel_supplier")
-data class supplier(
-    var namasupplier: String,
-    var desksupplier: String,
-    var emailsupplier : String,
-   var notelpsup : String,
-    var alamatsup : String)
-{
-    @PrimaryKey(autoGenerate = true) var id_supplier: Int = 0
-
-}
-@Entity
-    (tableName = "tabel_pembelian")
-data class pembelian(
-    var namasupplierp: String,
-    var produkdes: String,
-    var tanggalpesan: String,
-    var totalpembelian:Int )
-{
-    @PrimaryKey(autoGenerate = true)
-    var id_pembelian: Int = 0
-
-}
 
 @Entity
     (tableName = "tabel_temppesproduk")
