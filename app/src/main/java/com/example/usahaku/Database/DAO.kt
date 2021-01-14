@@ -72,40 +72,6 @@ interface tempprodukDao {
 }
 
 @Dao
-interface supplierdao {
-
-    @Insert
-    fun insert(supplier: supplier)
-
-    @Update
-    fun update(supplier: supplier)
-
-    @Delete
-    fun delete(supplier: supplier)
-
-    @Query("SELECT * FROM tabel_supplier")
-    fun getAllsupplier(): LiveData<List<supplier>>
-
-}
-
-@Dao
-interface pembeliandao {
-
-    @Insert
-    fun insert(pembelian: pembelian)
-
-    @Update
-    fun update(pembelian : pembelian)
-
-    @Delete
-    fun delete(pembelian: pembelian)
-
-    @Query("SELECT * FROM tabel_pembelian")
-    fun getAllpembelian(): LiveData<List<pembelian>>
-
-}
-
-@Dao
 interface temppesprodukDao {
     @Query("SELECT * from tabel_temppesproduk")
     fun alldatatemppesproduk(): LiveData<List<temppesproduk>>
